@@ -63,6 +63,8 @@ views = pd.DataFrame(
 )
 views
 
+print(f"Views Table:\n {views}")
+
 
 def article_view(views: pd.DataFrame) -> pd.DataFrame:
     author_list = list(
@@ -70,8 +72,9 @@ def article_view(views: pd.DataFrame) -> pd.DataFrame:
         .rename(columns={"author_id": "id"})["id"]
         .unique()
     )
+    author_list = sorted(author_list)
     finallist = pd.DataFrame(author_list, columns=["id"])
     return finallist
 
 
-article_view(views)
+print(f"Ouput Table:\n", article_view(views))
