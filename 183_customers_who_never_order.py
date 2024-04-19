@@ -50,3 +50,16 @@ final_df.rename(columns={"name": "Customers"}, inplace=True)
 
 print(f"Name of the customer who didnt ordered: \n{final_df}")
 import pandas as pd
+
+
+# 2nd approach
+def find_customers2(customers: pd.DataFrame, orders: pd.DataFrame) -> pd.DataFrame:
+    orderedCustomer = list(orders.customerId.unique())
+    notorderCustomer = customers.loc[
+        customers.id.isin(orderedCustomer), ["name"]
+    ].rename(columns={"name": "Customers"})
+    return notorderCustomer
+
+
+final_df2 = find_customers2(customer, orders)
+print(final_df2)
