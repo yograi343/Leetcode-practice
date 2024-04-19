@@ -12,3 +12,11 @@ def createDataframe(student_data: list[list[int]]) -> pd.DataFrame:
 
 df = createDataframe(lst)
 print(df)
+
+
+# creating a function that will return the shape of the dataframe
+def sizeDataFrame(df: pd.DataFrame) -> list[int]:
+    return list(df.shape)
+
+
+print("Shape of the DataFrame: ", sizeDataFrame(df))
