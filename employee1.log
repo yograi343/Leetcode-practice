@@ -1,0 +1,6 @@
+DEBUG:__main__:Created Employee: John Smith - John.Smith@email.com
+DEBUG:__main__:Created Employee: Corey Schafer - Corey.Schafer@email.com
+DEBUG:__main__:Created Employee: Yogesh Rai - Yogesh.Rai@email.com
+DEBUG:test:Created Employee: John Smith - John.Smith@email.com
+DEBUG:test:Created Employee: Corey Schafer - Corey.Schafer@email.com
+DEBUG:test:Created Employee: Yogesh Rai - Yogesh.Rai@email.com

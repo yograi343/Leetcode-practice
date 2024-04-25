@@ -1,4 +1,5 @@
 import logging
+import test
 
 """ 
 DEBUG: detailed information, typically or interest only when diagnosing problems
@@ -9,9 +10,9 @@ Error: Due to more serious problem the sofware has not able to perform some func
 Critical: A serios Error, indicating the program itself may be unable to continue running.
 """
 logging.basicConfig(
-    filename="test.log",
+    filename="sample.log",
     level=logging.DEBUG,
-    format="%(asctime)s:%(levelname)s:%(message)s}",
+    format="%(name)s:%(levelname)s:%(message)s}",
 )
 
 
