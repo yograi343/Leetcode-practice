@@ -1,0 +1,4 @@
+DEBUG:root:Add: 10+5=15
+DEBUG:root:Substract: 10+5=5
+2024-04-25 13:28:02,015:DEBUG:Add: 10+5=15}
+2024-04-25 13:28:02,015:DEBUG:Subtract: 10-5=5}
